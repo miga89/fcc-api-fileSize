@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>API: File Metadata Microservice</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="header">
+                API: File Metadata Microservice
+            </h2>
+            <p class="st"> A freecodecamp.com backend project</p>
+
+            <blockquote>
+                How it works:
+                <ul>1) I can submit a FormData object that includes a file upload.</ul>
+                <ul>2) When I submit something, I will receive the file size in bytes within the JSON response</ul>
+            </blockquote>
+            <h3>Example output:</h3>
+            <code>
+            {
+                "size": 223549
+            }
+            </code>
+            <h3>Please Upload a File:</h3>
+            <form action="/analyzeFile/" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="file" name="photo" id="photo" id="exampleInputFile">
+                    <button type="submit" class="btn btn-default sub-btn">Upload</button>
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>
